@@ -30,7 +30,7 @@ html, body {
 // Estilo de Verdade
 body {
     color: #333;
-    background: url(../images/bg-1.jpg) no-repeat right bottom fixed;
+    background: #f1f1ef url(../images/bg-1.jpg) no-repeat right bottom fixed;
     overflow: hidden;
 }
 
@@ -85,4 +85,70 @@ footer {
 .btn:hover,
 .btn:focus {
   background: #aaa;
+}
+
+
+
+// Smartphones no modo paisagem.
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        background: none;
+        overflow: auto
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    footer {
+        position: static
+    }
+
+    .btn {
+        padding: 7px 20px;
+    }
+}
+
+// Tablets pequenos. Ex: Amazon Kindle (600×800)
+@media only screen and (min-device-width : 480px) and (max-device-width : 600px) {
+    body {
+        background: none;
+        overflow: auto
+    }
+
+    footer {
+        position: static
+    }
+}
+
+
+// Tablets maiores em modo retrato. Ex: iPad (768×1024)
+@media only screen and (min-device-width : 600px) and (max-device-width : 768px) {
+    body {
+        background: none;
+        overflow: auto
+    }
+
+    footer {
+        position: static
+    }
+}
+
+
+// Tablets maiores em modo paisagem, monitores antigos.
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        overflow: auto;
+        background-size: 130%;
+    }
+
+    footer {
+        position: static
+    }
+}
+
+
+//  Monitores wide.
+@media only screen and (min-device-width : 1024px) {
+
 }

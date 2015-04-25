@@ -6389,7 +6389,7 @@ body {
 }
 body {
   color: #333;
-  background: url(../images/bg-1.jpg) no-repeat right bottom fixed;
+  background: #f1f1ef url(../images/bg-1.jpg) no-repeat right bottom fixed;
   overflow: hidden;
 }
 .cabecario {
@@ -6428,4 +6428,46 @@ footer {
 .btn:hover,
 .btn:focus {
   background: #aaa;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    background: none;
+    overflow: auto;
+  }
+  .logo {
+    width: 90%;
+  }
+  footer {
+    position: static;
+  }
+  .btn {
+    padding: 7px 20px;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 600px) {
+  body {
+    background: none;
+    overflow: auto;
+  }
+  footer {
+    position: static;
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 768px) {
+  body {
+    background: none;
+    overflow: auto;
+  }
+  footer {
+    position: static;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    overflow: auto;
+    background-size: 130%;
+  }
+  footer {
+    position: static;
+  }
 }
